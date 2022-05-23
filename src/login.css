@@ -47,7 +47,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
-    padding-top: 120px;
+    padding-top: 125px;
 }
 
 .button1, .button{
@@ -63,6 +63,23 @@
     border-style: inset;
     border-color: coral;
     border-width: 7px;
+}
+
+.btn-show {
+    position: relative;
+    border-radius: 20px;
+    display: block;
+    margin-left: 74%;
+    margin-bottom: 5px;
+    margin-top: -25px;
+    border-style: inset;
+    border-color: coral;
+    border-width: 2px;
+}
+
+.btn-show:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .button:hover{

@@ -1,7 +1,12 @@
 import React from 'react';
 import './Register.css';
+import { useState } from "react";
 
 export default function Register(){
+    const [passwordShown, setPasswordShown] = useState(false);
+    const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+    };
     return(
         <div className="nav">
             <div className="header">
@@ -10,10 +15,12 @@ export default function Register(){
             <div className="body">
                 <input className="input-place" type="text" placeholder="Username"/>
                 <div className="input">
-                    <input className="input-place" type="password" placeholder="Password"/>
+                <button className="btn-show" onClick={togglePassword}>Show</button>
+                    <input className="input-place" type={passwordShown ? "text" : "password"} placeholder="Password" />
                 </div>
                 <div className="input">
-                    <input className="input-place" type="password" placeholder="Password again"/>
+                <button className="btn-show" onClick={togglePassword}>Show</button>
+                    <input className="input-place" type={passwordShown ? "text" : "password"} placeholder="Password again" />
                 </div>
             </div>
             <div className="footer1">

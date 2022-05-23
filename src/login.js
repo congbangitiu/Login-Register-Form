@@ -1,7 +1,12 @@
 import React from 'react';
 import './Login.css';
+import { useState } from "react";
 
-function Login(){
+export default function Login(){
+    const [passwordShown, setPasswordShown] = useState(false);
+    const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+    };
     return (
         <div className="nav">
             <div className="header">
@@ -10,7 +15,8 @@ function Login(){
             <div className="body">
                 <input className="input-place" type="text" placeholder="Username"/>
                 <div className="input">
-                    <input className="input-place" type="password" placeholder="Password"/>
+                    <button className="btn-show" onClick={togglePassword}>Show</button>
+                    <input className="input-place" type={passwordShown ? "text" : "password"} placeholder="Password" />
                 </div>
             </div>
             <div className="footer">
@@ -25,4 +31,4 @@ function Login(){
         );
 }
 
-export default Login;
+// export default Login;
