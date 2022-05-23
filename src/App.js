@@ -1,4 +1,4 @@
-import login from "./login";
+import login from "./Login";
 import Toggle from "./Toggle";
 import './App.css';
 

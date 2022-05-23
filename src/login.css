@@ -47,10 +47,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
-    padding-top: 110px;
+    padding-top: 120px;
 }
 
-.button-1, .button{
+.button1, .button{
     background-color: green;
     color: white;
     padding: 20px 35px;
@@ -59,13 +59,13 @@
     text-decoration: none;
 }
 
-.button-1 {
+.button {
     border-style: inset;
     border-color: coral;
     border-width: 7px;
 }
 
-.button-1:hover{
+.button:hover{
     opacity: 0.8;
     cursor: pointer;
 }
