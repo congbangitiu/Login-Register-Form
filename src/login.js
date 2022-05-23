@@ -28,7 +28,5 @@ export default function Login(){
                 <a>Don't have an account? Click here</a>
             </div>
         </div>
-        );
+    );
 }
-
-// export default Login;
