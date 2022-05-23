@@ -8,12 +8,15 @@ export  default function Toggle(){
 
     return (
         <div>
-            <div>
+            {/* <div>
                 {
                     show ? <Register/> : <Login />
                 }
-            </div>
+            </div> */}
             <div className="base">
+                {
+                    show ? <Register/> : <Login />
+                }
                 <button onClick={() => setShow(!show)}>Click</button>
             </div>
         </div>
