@@ -10,7 +10,7 @@ export default function Register(){
     return(
         <div className="nav">
             <div className="header">
-                <h1>REGISTER</h1>
+                <h1>SIGN IN</h1>
             </div>
             <div className="body">
                 <input className="input-place" type="text" placeholder="Username"/>
